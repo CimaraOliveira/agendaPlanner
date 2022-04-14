@@ -1,8 +1,12 @@
 package com.planner.agenda.AgendaPlanner.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-public class agenda {
-	
+@Entity
+public class Agenda {
+	@Id
+	private Long idCompra;	
 	private String nome;
 	private String local;
 	private String data; 
