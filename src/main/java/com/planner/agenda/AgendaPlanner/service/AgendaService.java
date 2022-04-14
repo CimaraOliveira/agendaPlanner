@@ -1,5 +1,7 @@
 package com.planner.agenda.AgendaPlanner.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +18,8 @@ public class AgendaService {
 		 repository.save(anotacoes);
 	}
 	
+	public List<Agenda> findAll() {
+		return repository.findAll();
+	}
 
 }
