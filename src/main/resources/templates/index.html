@@ -1,7 +1,19 @@
 <html>
+<head>
+<title>Lista de Anotações</title>
+</head>
 <body>
 
-<h3>Olá mundo com spring boot</h3>
+<h1>Lista de Anotações</h3>
+<h3>Adicionar Anotação</h3>
+<div th:each="agenda : ${anotacoes}">
+	<div class="row">
+	     <p><span th:text="${agenda.nome}"></span></p>
+	     <p><span th:text="${agenda.local}"></span></p>
+	     <p><span th:text="${agenda.data}"></span></p>
+	     <p><span th:text="${agenda.horario}"></span></p>
+	</div>
+</div>
 
 </body>
 </html>
