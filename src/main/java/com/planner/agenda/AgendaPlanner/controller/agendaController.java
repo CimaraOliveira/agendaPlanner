@@ -10,6 +10,11 @@ public class agendaController {
 	public String index() {
 		return "index";
 	}
+	
+	@RequestMapping("/adicionar")
+	public String form() {
+		return "agenda/formagenda";
+	}
 
 
 }
